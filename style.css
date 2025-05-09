@@ -76,3 +76,25 @@ a:hover {
 }
 
 
+.review-1{
+  display: flex;
+  justify-content: center; /* centers horizontally */
+  align-items: center;     /* centers vertically */
+  width: 250px;            
+  height: 150px;           
+  border: 2px solid white;
+  border-radius: 100px;     
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  float: left;
+}
+
+
+
+.copyright{
+  clear: both;
+  height: 100vh;
+  margin-top: 200px;
+}
