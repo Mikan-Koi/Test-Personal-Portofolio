@@ -8,51 +8,71 @@
     <meta name="author" content="Mikan-Koi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML website Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="vecteezy_adidas-logo-symbol-clothes-design-icon-abstract-football_10994276.jpg">
   </head>
   <body>
 
-    <header class="Head">
-    <img src="4962.jpg" width="50" alt="Logo">      
-    <span>Mikan-Koi</span>
+    <header class="head">
+    <img src="4962.jpg" width="50" alt="Logo" class="logo-image">      
+    <span class="name-text">Mikan-Koi</span>
 
-    <nav class="Navigation-Links">
-      <span><a href="Basic HTML Website.html" target="_blank">Home / </a></span>
+    <div class="navigation-container">
+    <nav class="navigation-links">
+      <span><a href="Homepage.html" target="_blank">Home / </a></span>
       <span><a href="Projects.html" target="_blank">Projects / </a></span>
       <span><a href="Articles.html" target="_blank">Articles / </a></span>
       <span><a href="Contact.html" target="_blank">Contact  / </a></span>
     </nav>
-
+    </div>
     </header>
     
-    <section>
-      <h1>Devops Engineer</h1>
-      <p>this is really html only no css</p>
-      <hr>
-    </section>
-
-    <aside class='little-project-show'>
-      <h2>Projects</h2>
-      <li>Rock Paper Scissor Games</li>
-      <li>Calculator</li>
-      <li>Shopping website</li>
-      <li>Tic-Tac-Toe</li>
-      <li>Youtube Grid</li>
-      <hr>
-    </aside>
     
-    <section class="work-experience">
-      <h2>Work Experience</h2>
-      <h5><a rel ="noopener" href="https://roadmap.sh" target="_blank">Roadmap.sh</a></h5>
-      <p>Solved All Problem In there</p>
+    <section>
+      <div class="intro">
+      <h1 class="firstintro">Devops Engineer</h1>
+      <p class="secondintro">this is html + css</p>
+      </div>  
       <hr>
     </section>
 
+    <div class="row">
+
+        <div class="projects-container">
+        <aside class='little-project-show'>
+          <h2>Projects</h2>
+          <li>Rock Paper Scissor Games</li>
+          <li>Calculator</li>
+          <li>Shopping website</li>
+          <li>Tic-Tac-Toe</li>
+          <li>Youtube Grid</li>
+        </aside>
+        </div>
+
+
+        <div class="projects-container">
+        <section class="work-experience">
+          <h2>Work Experience</h2>
+          <h5><a rel ="noopener" href="https://roadmap.sh" target="_blank">Roadmap.sh</a></h5>
+          <p>Solved All Problem In there</p>
+          <p>Actively making project in github
+        </section>
+        </div>
+
+        
+   <div class="projects-container">
     <section class="open-source-work">
       <h2>Open Source Work</h2>
       <p>Contributing to the society by being alive (bro this cringe af)</p>
       <p>U can actually see my <a rel="noopener" href="https://www.tiktok.com/@phenzz.7" target="_blank">tiktok</a> because im currently on a coding learning Journey</p>
       <a rel="noopener" href="https://github.com/Mikan-Koi" target="_blank">Visit my github profile here</a>
     </section>
+    </div>
+
+    <hr>
+   </div>
+
+
 
     <aside class="education">
       <h2>Education</h2>
