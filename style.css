@@ -77,24 +77,68 @@ a:hover {
 
 
 .review-1{
+  background-color: #121212;
   display: flex;
-  justify-content: center; /* centers horizontally */
-  align-items: center;     /* centers vertically */
+  align-items: center;
   width: 250px;            
-  height: 150px;           
-  border: 2px solid white;
-  border-radius: 100px;     
+  height: 150px;             
   padding: 20px;
   margin-right: 20px;
   text-align: center;
   color: white;
   float: left;
+  position: relative;  
 }
 
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.review-1::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 3px;
+   background-image: conic-gradient(from var(--angle), #000000, #ffffff, #4f5758, #ffffff, #000000);
+   animation: 3s spin linear infinite;
+}
+
+
+.review-1::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(1.5rem);
+  opacity: 0.2;
+   background-image: conic-gradient(from var(--angle), #000000, #ffffff, #84898a, #ffffff, #000000);
+  z-index: -2;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
 
 
 .copyright{
   clear: both;
-  height: 100vh;
   margin-top: 200px;
+}
+
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
 }
