@@ -59,7 +59,9 @@ a:hover {
   margin-top: -10px;
 }
 
-
+.row{
+  display: flex;
+}
 
 .projects-container{
   display: flex;
@@ -67,6 +69,20 @@ a:hover {
   width: 33.33%;
   float: left;
   vertical-align: top;
+  position: relative;
+}
+
+.projects-container:not(:last-child)::after{
+  /* this is vertical line */
+  /* not last child is for making the line doesnt exist for the third part */
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  right: 100px;
+
 }
 
 .row:after {
