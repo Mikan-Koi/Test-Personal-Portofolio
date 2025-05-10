@@ -49,6 +49,7 @@ a:hover {
 }
 
 .firstintro{
+  font-size: clamp(1.8rem , 10vw ,1rem);
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -156,5 +157,39 @@ a:hover {
   }
   to{
     --angle: 360deg;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-container {
+    width: 100vw;
+  }
+
+  .projects-container:not(:last-child)::after {
+    display: none;
+  }
+
+  .navigation-container {
+    text-align: center;
+    transform: translateY(-10px);
+    margin-top: 5px;
+  }
+
+  .head .name-text {
+    font-size: 1.2rem;
+    height: auto;
+  }
+
+  .review-1 {
+    width: 90%;
+    margin: 10px 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
   }
 }
